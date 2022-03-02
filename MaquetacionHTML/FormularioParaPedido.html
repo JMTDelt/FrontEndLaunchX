@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido pasteleria X</title>
+</head>
+<body>
+    <h1>Pedido de Pastel X</h1>
+
+
+    <form action="pedidopastel.js">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" maxlength="10">
+        <br><br>
+        <label for="correo.electronico">Correo electronico</label>
+        <input type="email" name="correo.electronico" placeholder="Ej. usuario@servidor.com">
+        <br><br>
+        <label for="no.pedido">Tu numero de pedido es:</label>
+        <input type="number" name="no.pedido" id="no.pedido" placeholder="1">
+        <br><br>
+        <label for="fecha-de-pedido">¿Para cuándo quieres tu pastel?</label>
+        <input type="date" name="fecha-de-pedido" list="listafecha">
+        <br><br>
+
+        <hr>
+
+        <h2>Descripción de tu pastel</h2>
+
+
+        <p>¿De qué quieres tu pastel de agente? (Se acepta la combinación de al menos 2 agentes)</p>
+        <input type="checkbox" name="limon" id="limon">
+        <label for="limon">Agente Especial Fox Mulder</label>
+        <input type="checkbox" name="vainilla" id="vainilla">
+        <label for="vainilla">Agente Especial Dana Scully</label>
+        <br><br>
+        <input type="checkbox" name="chocolate" id="chocolate">
+        <label for="chocolate">Agente Especial John Doggett</label>
+        <input type="checkbox" name="fresa" id="fresa">
+        <label for="fresa">Agente Especial Mónica Reyes</label>
+
+
+        <p>Toppings para el agente</p>
+        <input type="checkbox" name="chispas-colores" id="chispas-colores">
+        <label for="chispas-colores">Chispas de colores</label>
+        <input type="checkbox" name="chispas-chocolate" id="chispas-chocolate">
+        <label for="chispas-chocolate">Chispas de chocolate</label>
+        <br><br>
+        <input type="checkbox" name="merengue" id="merengue">
+        <label for="merengue">Merengue</label>
+        <input type="checkbox" name="durazno" id="durazno">
+        <label for="durazno">Durazno</label>
+        <br><br>
+        <input type="checkbox" name="fresa" id="fresa">
+        <label for="fresa">Fresa</label>
+        <input type="checkbox" name="mango" id="mango">
+        <label for="mango">Mango</label>
+        <br><br>
+        <input type="checkbox" name="mora-azul" id="mora-azul">
+        <label for="mora-azul">Mora Azul</label>
+        <input type="checkbox" name="azucar-glass" id="azucar-glass">
+        <label for="azucar-glass">Azúcar Glass</label>
+
+        <p>¿Quieres una archivo X en tu pastel? (sopresa)</p>
+        <input type="radio" name="si" id="si-no" value="si">
+        <label for="si">Si</label>
+        <input type="radio" name="no" id="si-no" value="no">
+        <label for="no">No</label>
+        <br><br>
+
+        <a href="pedidolisto.html" target="_blank">
+            <input type="submit" name="enviar" id="enviarformulario" value="Enviar Formulario">    
+            <label for="enviar"></label>
+        </a>
+        <br><br>
+
+    </form>
+    
+</body>
+</html>
